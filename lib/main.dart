@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_apk/user_home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() =>
@@ -24,7 +25,11 @@ class Flutter extends StatelessWidget {
             height: 60,
             padding: EdgeInsets.only(top: 10, left: 80),
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) =>  MyApp()));
+              },
               color: Colors.blue,
               textColor: Colors.white,
               shape: RoundedRectangleBorder(
@@ -57,7 +62,15 @@ class Flutter extends StatelessWidget {
             height: 60,
             padding: EdgeInsets.only(top: 10, left: 80),
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+
+
+                Navigator.of(context).pop();
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) =>  MyApp()));
+
+
+              },
               color: Colors.green,
               textColor: Colors.white,
               shape: RoundedRectangleBorder(
