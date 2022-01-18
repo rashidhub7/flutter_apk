@@ -2,9 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_apk/user_home.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() =>
     runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Flutter()));
+
+
+
+
+
 
 class Flutter extends StatelessWidget {
   @override
@@ -91,6 +97,7 @@ class Flutter extends StatelessWidget {
               ),
             ),
           ),
+
         ],
       ),
     );
